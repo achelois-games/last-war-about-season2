@@ -3,6 +3,7 @@
 - [事前準備](pre-in-advance.md)
 - [3月3日(S2開始当日)のポイント](flow-for-the-day-1.md)
 - [序盤の重要事項](keys-for-beggining.md)
+- test
 
 ### 概要
 3月3日からついにシーズン2 (以下S2) が始まります。  
