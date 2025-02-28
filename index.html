@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラストウォー シーズン2 事前準備ガイド</title>
+    <style>
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #3498db;
+            --text-color: #2c3e50;
+            --background-color: #f5f5f5;
+            --card-background: #ffffff;
+            --warning-background: #fff3cd;
+            --warning-border: #ffc107;
+            --date-specific-background: #e8f4f8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .header {
+            background-color: var(--card-background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .preparation-list {
+            background-color: var(--card-background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .preparation-list h2 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .preparation-list ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .preparation-item {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 0.5rem;
+        }
+
+        .preparation-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .preparation-item a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .note {
+            background-color: var(--warning-background);
+            border-left: 4px solid var(--warning-border);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note p {
+            margin: 0.5rem 0;
+        }
+
+        .note ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-specific {
+            background-color: var(--date-specific-background);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-specific h2 {
+            border-left: none;
+            padding-left: 0;
+            color: var(--primary-color);
+        }
+
+        .date-specific section {
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem auto;
+            }
+
+            .card, .preparation-list, .date-specific {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>シーズン2 事前準備ガイド</h1>
+        </header>
+
+        <div class="preparation-list">
+            <h2>事前にやっておくこと</h2>
+            <ol>
+                <li class="preparation-item"><a href="#tower">勝利の塔をLv3に</a></li>
+                <li class="preparation-item"><a href="#research">研究・熟練職人 をLv.MAXに</a></li>
+                <li class="preparation-item"><a href="#engineer">エンジニアスキル・省エネ改修 をLv.5に</a></li>
+                <li class="preparation-item"><a href="#viola">SSR英雄 ヴィオラの欠片を集める</a></li>
+                <li class="preparation-item"><a href="#relocation">高級移設を入手</a></li>
+                <li class="preparation-item"><a href="#soldiers">兵士を節約</a></li>
+                <li class="preparation-item"><a href="#ap">APを節約</a></li>
+                <li class="preparation-item"><a href="#radar">レーダークエストを貯める</a></li>
+                <li class="preparation-item"><a href="#wanderer">流浪者は倒さない</a></li>
+            </ol>
+        </div>
+
+        <div class="card" id="tower">
+            <h2>1. 勝利の塔をLv3に</h2>
+            <p>装飾物『勝利の塔』をLv3まで上げるとシーズン中、大きな温度バフを得られます。</p>
+            <div class="note">
+                <p>※温度については別途説明</p>
+                <p>※Lv1や2でもバフ効果有り</p>
+                <ul>
+                    <li>Lv1: 3℃</li>
+                    <li>Lv2: 4℃</li>
+                    <li>Lv3以上: 5℃</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="research">
+            <h2>2. 研究・熟練職人 をLv.MAXに</h2>
+            <p>研究 > 発展 > 熟練職人をLv.MAXにしましょう。シーズン建築物のLvを上げるために必要な石炭量を減らすことができます。</p>
+            <div class="note">
+                <p>※シーズン建築物 / 石炭については別途説明</p>
+            </div>
+        </div>
+
+        <div class="card" id="engineer">
+            <h2>3. エンジニアスキル・省エネ改修 をLv.5に</h2>
+            <p>職業 > エンジニア > スキル > 省エネ改修をLv.5にしましょう。これもシーズン建築物のLvを上げるために必要な石炭量を減らすことができます。</p>
+        </div>
+
+        <div class="card" id="viola">
+            <h2>4. SSR英雄 ヴィオラの欠片を集める</h2>
+            <img src="https://gist.github.com/user-attachments/assets/2a1f2002-be43-400e-9b96-cb2c6aa1355a" alt="ヴィオラ">
+            <p>ヴィオラはS2中にURに昇格できます。ガチャや連盟交換所で欠片を集めましょう。</p>
+        </div>
+
+        <div class="card" id="relocation">
+            <h2>5. 高級移設を入手</h2>
+            <p>S2では多くの高級移設が必要になります。VIP商店や連盟交換所で入手しておきましょう。</p>
+            <div class="note">
+                <p>※実際の移設日時や場所は別途指示があります</p>
+            </div>
+        </div>
+
+        <div class="card" id="soldiers">
+            <h2>6. 兵士を節約</h2>
+            <p>S1同様に、S2でも拠点の制圧などに多くの兵士を使います。直前は節約を心がけましょう。</p>
+        </div>
+
+        <div class="card" id="ap">
+            <h2>7. APを節約</h2>
+            <p>S1同様に、S2でも狩りや都市制圧などに多くのAPを使います。所持APに少し余裕を持たせましょう。</p>
+        </div>
+
+        <div class="date-specific">
+            <h2>前日・当日 (3月3日) に気をつけること</h2>
+            
+            <section id="radar">
+                <h3>レーダークエストを貯める</h3>
+                <p>S2が始まると、レーダークエストから石炭を得るチャンスがあります。MAX-1から始められるように前日から調整をしましょう。</p>
+            </section>
+
+            <section id="wanderer">
+                <h3>流浪者は倒さない</h3>
+                <p>S2が始まると、終末の流浪者の初回撃破報酬に石炭やチタン合金が追加されます。3月3日は11時を過ぎてもすぐに流浪者を倒さず、S2が始まるのを待ってから倒しましょう。</p>
+                <p>また、強い人に依頼し、可能な限り強い流浪者を狙いましょう。</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html> 
