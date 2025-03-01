@@ -1,8 +1,8 @@
 # シーズン2 情報
 ### 詳細情報
-- [事前準備](pre-in-advance.md)
-- [3月3日(S2開始当日)のポイント](flow-for-the-day-1.md)
-- [序盤の重要事項](keys-for-beggining.md)  
+- [事前準備](contents/pre-in-advance.md)
+- [3月3日(S2開始当日)のポイント](contents/flow-for-the-day-1.md)
+- [序盤の重要事項](contents/about-front-runner.md)  
 
 ---
 
