@@ -3,7 +3,7 @@
 - [事前準備](/md/contents/pre-in-advance.md)
 - [3月3日(S2開始当日)のポイント](/md/contents/flow-for-the-day-1.md)
 - [ウイルス値対策](/md/contents/about-front-runner.md)  
-- [温度管理と寒波対策]()  
+- [温度管理と寒波対策](/md/contents/temperature.md)  
 
 ---
 
